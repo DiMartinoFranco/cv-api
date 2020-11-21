@@ -32,7 +32,7 @@ def index():
     info={
         "mensaje" : "Bienvenido a la API",
         "acciones" : [
-            "GET /curriculum"
+            "GET /curriculum",
             "POST /mensajes" 
         ]
     }
@@ -42,8 +42,8 @@ def index():
 def cv():
     url_imagen = request.host_url + "static/amigosmtb.png"
     cv = {
-        "nombre" : "Nahuel",
-        "apellido" : "Tori",
+        "nombre" : "Franco",
+        "apellido" : "Di Martino",
         "residencia" : "Argentina",
         "experiencia" : [{
             "posicion" : "< describe tu posición>",
@@ -60,9 +60,9 @@ def cv():
         },
         "intereses" : ["python", "apis", "enseñar"],
         "redes" : {
-            "github" : "https://github.com/nahueltori",
-            "twitter" : "https://twitter.com/nahueltori",
-            "linkedin" : "https://www.linkedin.com/in/nahueltori"
+            "github" : "https://github.com/DiMartinoFranco",
+            
+            
         },
         "foto" : url_imagen
     }
